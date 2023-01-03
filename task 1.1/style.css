@@ -1,0 +1,88 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    max-width: 1800px;
+    padding: 50px;
+    background-color:#efefef;
+ }
+ .header{
+    text-align: center;
+ }
+ .header__name{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 50px;
+  font-weight: 500;
+ }
+
+ .description {
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+ .foto__description {
+        width: 100%;
+        height: 50px;
+        background-color: #DEDEDE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+.foto {
+    margin-top: 20px;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    
+  }
+  .foto img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+.h1{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: center;
+    text-align: center;
+    border: 1px solid rgb(243, 240, 240);
+    
+ 
+}
+.header__Onassis{
+    background-color:#dedede;
+    height: 40px;
+    line-height: 40px;
+    width: center;
+    text-align: center;
+    border: 1px solid #000;
+    
+    
+ }
+.Wikipedia{
+    color:blue;
+    cursor: pointer;
+    text-align: center;
+ }
+.header__wikipedia{
+    text-align: center;
+}
+.footer__text{
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+

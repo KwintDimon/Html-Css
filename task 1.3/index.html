@@ -21,30 +21,30 @@
       <div class="container__first-last">
         <div class="input-first">
           <label class="form__label"><h2>First name*</h2></label>
-          <input class="form__input" value="enter your first name">
+          <input class="form__input" value=" enter your first name">
         </div>
 
         <div class="input-last">
           <label class="form__label"><h2>Last name</h2></label>
-          <input class="form__input" value="enter your first name">
+          <input class="form__input" value=" enter your last name">
         </div>
       </div>
 
       <div class="input-email">
         <label class="form__email"><h2>Email*</h2></label>
-        <input class="email"  value="enter your email">
+        <input class="email"  value=" enter your email">
       </div>
 
 
       <div class="container__password">
         <div class="input-password">
           <label class="form__label"><h2>Password*</h2></label>
-          <input class="form__input" value="enter your password">
+          <input class="form__input" value=" enter your password">
         </div>
 
         <div class="input-confirm">
           <label class="form__label"><h2>Confirm Password*</h2></label>
-          <input class="form__input" value="enter your password again">
+          <input class="form__input" value=" enter your password again">
         </div>
       </div>
 
@@ -67,45 +67,40 @@
 
         
         <div class="container__income">
-          <div class="source of income">
-              <h2>Source of Income</h2>
-              <select>
-                <option value="1">Employed </option>
-                <option value="2">Employed 2</option>
-              </select>
-          </div>
+          
   
           <div class="income">
-            <h2>Income</h2>
+            <h2 class="income-source">Source of Income</h2> 
             <form
             oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-            <input type="range" id="b" name="b" value="50" class="range"></input>+
-            <input type="number" id="a" name="a" value="10"></input>=
-            <output name="result" for="ab">60</output>
+            <input class="number" type="number" id="a" name="a" value="20">
+            <h2 class="income-range">Income</h2></input>
+            <input type="range" id="b" name="b" value="50" class="range"></input>
+            <output class="result" name="result" for="ab">20K</output>
             </form>
           </div>
         </div>
 
          <div class="container__file-age">
-            <div class="File">
+            <div class="file">
               <label><h2>Upload Profile Picture</h2></label>
-              <input type="file" name="Hobbies" value="">
+              <input type="file" name="file-age" value="">
             </div>
   
           <div class="age">
             <h2>Age</h2>
-            <input class="text" name="Age" value="18">
+            <input type="text" class="input-age" name="Age" value =" 18">
           </div>
         </div>
 
           <div class="bio">
             <h2>Bio</h2>
-            <textarea></textarea>
+            <textarea cols="100" rows="70" maxlength="5"></textarea>
           </div>
         </div>
         
           <div class="footer">
-            <button class="form__button">Create</button>
+            <button type="reset" class="form__button">Create</button>
           </div>
   </div>
 

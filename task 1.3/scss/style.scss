@@ -50,7 +50,7 @@ body{
   width: 595px;
   height: 25px;
   border-radius:5px;
-  color:#EFEFEF;
+  color:#bebcbc;
 }
 
 .form{
@@ -82,39 +82,42 @@ body{
   padding-bottom: 20px;  
 }
 
-.container__income{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap:10px;
-  padding-bottom: 20px;  
-}
-
 .container__file-age{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap:150px;
-  padding-bottom: 20px;  
+  grid-column-gap:10px;
+  padding-bottom: 20px;
+    
+}
+.age{
+  
+  width: 250px;
+}
+.input-age{
+  width: 290px;
+  height: 25px;
+  border-radius:5px;
 }
 
 .range{
-  width: 200px;
+  width: 250px;
+  margin-left: 305px;
 }
 
-.button__range{
-  width: 30px;
-  font-size: 15px;
-  background-color: #00BC94;
-  margin-bottom: 10px;
-  text-align: center;
-  color:white
+.income-range{
+  margin-left:305px ;
 }
 
-.text{
-  width: 190px;
-  height:25px;
-  border-radius:5px;
-  color:#bebcbc;
+.income-source{
+  width: 250px;
+  margin-top: 2px;
   
+}
+
+.result{
+  color:aliceblue;
+  background-color:#00BC94;
+  border-radius:2px;
 }
 
 textarea{
@@ -142,7 +145,7 @@ select{
   padding:10px 20px;
   margin-right: 40px;
   margin-top: 10px;
-  color:aliceblue
+  color:aliceblue;
 }
 
 .hobbies{
@@ -151,7 +154,7 @@ select{
 
 h2{
   color:#00BC94;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .footer{
@@ -159,7 +162,7 @@ h2{
   text-align: right;
   background-color:#EFF0F2;
   width: 650px;
-  height: 70px;
+  height: 80px;
   border-radius:0 0 10px 10px;
   border-top: 1px solid;
   
@@ -167,6 +170,26 @@ h2{
 label{
   color:black
 }
+.number{
+  width: 290px;
+  height:25px;
+  border-radius:5px;
+  color:#050000;
+    
+}
+.option-sourse{
+  width: 295px;
+  height: 25px;
+  border-radius:5px;
+  border:5px solid;
+}
+
+.income-label{
+  margin-left: 80px;
+  margin-top: 40px;
+  border: #050000 solid;
+}
+
 
 
 

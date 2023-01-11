@@ -9,6 +9,15 @@ body {
   font-weight: normal;
 }
 
+.form {
+  width: 250px;
+  height: 700px;
+  padding-right: 400px;
+  border-radius: 10px;
+  background-color: #FDFDFD;
+  margin: 250px auto 250px auto;
+}
+
 .form__group {
   padding-left: 25px;
   display: -ms-grid;
@@ -38,11 +47,22 @@ body {
   margin-top: -20px;
 }
 
+.container__income {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
 .form__input {
   width: 290px;
   height: 25px;
   border-radius: 5px;
   color: #bebcbc;
+  border: #bebcbc solid 2px;
 }
 
 .input-email {
@@ -55,15 +75,7 @@ body {
   height: 25px;
   border-radius: 5px;
   color: #bebcbc;
-}
-
-.form {
-  width: 250px;
-  height: 700px;
-  padding-right: 400px;
-  border-radius: 10px;
-  background-color: #FDFDFD;
-  margin: 250px auto 250px auto;
+  border: #bebcbc solid 2px;
 }
 
 .form__title {
@@ -73,7 +85,7 @@ body {
   width: 650px;
   height: 60px;
   padding-top: 25px;
-  border-bottom: 1px solid;
+  border-bottom: #bebcbc solid 2px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -103,20 +115,15 @@ body {
   width: 290px;
   height: 25px;
   border-radius: 5px;
+  border: #bebcbc solid 2px;
 }
 
 .range {
   width: 250px;
-  margin-left: 305px;
-}
-
-.income-range {
-  margin-left: 305px;
 }
 
 .income-source {
   width: 250px;
-  margin-top: 2px;
 }
 
 .result {
@@ -128,12 +135,9 @@ body {
 textarea {
   width: 600px;
   height: 80px;
-}
-
-select {
-  width: 295px;
-  height: 25px;
+  resize: none;
   border-radius: 5px;
+  border: #bebcbc solid 2px;
 }
 
 .header {
@@ -169,29 +173,16 @@ h2 {
   width: 650px;
   height: 80px;
   border-radius: 0 0 10px 10px;
-  border-top: 1px solid;
+  border-top: #bebcbc solid 2px;
 }
 
 label {
   color: black;
 }
 
-.number {
+.employed {
   width: 290px;
   height: 25px;
   border-radius: 5px;
-  color: #050000;
-}
-
-.option-sourse {
-  width: 295px;
-  height: 25px;
-  border-radius: 5px;
-  border: 5px solid;
-}
-
-.income-label {
-  margin-left: 80px;
-  margin-top: 40px;
-  border: #050000 solid;
+  border: #bebcbc solid 2px;
 }

@@ -10,105 +10,92 @@ body {
 }
 
 .form {
-  width: 250px;
+  width: 670px;
   height: 700px;
-  padding-right: 400px;
   border-radius: 10px;
   background-color: #FDFDFD;
-  margin: 250px auto 250px auto;
-}
-
-.form__group {
-  padding-left: 25px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.container__first-last {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 10px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: rgb(135, 154, 148);
-}
-
-.container__password {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 10px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  padding-bottom: 20px;
-  margin-top: -20px;
-}
-
-.container__income {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 10px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  padding-bottom: 20px;
-  margin-top: -10px;
-}
-
-.form__input {
-  width: 290px;
-  height: 25px;
-  border-radius: 5px;
-  color: #bebcbc;
-  border: #bebcbc solid 2px;
-}
-
-.input-email {
-  border-radius: 5px;
-  color: #bebcbc;
-}
-
-.email {
-  width: 595px;
-  height: 25px;
-  border-radius: 5px;
-  color: #bebcbc;
-  border: #bebcbc solid 2px;
+  margin: 250px auto;
 }
 
 .form__title {
   text-align: center;
   background-color: rgb(231, 231, 229);
   color: rgb(79, 78, 78);
-  width: 650px;
+  width: 670px;
   height: 60px;
   padding-top: 25px;
   border-bottom: #bebcbc solid 2px;
   border-radius: 10px 10px 0 0;
 }
 
-.container__gender-hobbies {
+.container {
+  display: -ms-grid;
+  display: grid;
+  color: rgb(135, 154, 148);
+  padding: 0 25px;
+}
+
+.container-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: rgb(135, 154, 148);
 }
 
-.container__file-age {
+.box__input {
+  width: 290px;
+  height: 25px;
+  border-radius: 5px;
+  color: #bebcbc;
+  border: #bebcbc solid 2px;
+  padding: 0px 5px;
+}
+
+.box-long {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 10px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  color: rgb(135, 154, 148);
 }
 
-.age {
+.box__email {
+  border-radius: 5px;
+  color: #bebcbc;
+}
+
+.email__input {
+  width: 605px;
+  height: 25px;
+  border-radius: 5px;
+  color: #bebcbc;
+  border: #bebcbc solid 2px;
+  padding: 0px 5px;
+}
+
+.employed {
+  width: 280px;
+  height: 25px;
+  border-radius: 5px;
+  border: #bebcbc solid 2px;
+  padding: 0 10px;
+}
+
+.range {
   width: 250px;
+}
+
+.container-range {
+  margin-top: 10px;
+}
+
+.result {
+  color: aliceblue;
+  background-color: #00BC94;
+  border-radius: 2px;
 }
 
 .input-age {
@@ -118,33 +105,12 @@ body {
   border: #bebcbc solid 2px;
 }
 
-.range {
-  width: 250px;
-}
-
-.income-source {
-  width: 250px;
-}
-
-.result {
-  color: aliceblue;
-  background-color: #00BC94;
-  border-radius: 2px;
-}
-
 textarea {
-  width: 600px;
+  width: 612px;
   height: 80px;
   resize: none;
   border-radius: 5px;
   border: #bebcbc solid 2px;
-}
-
-.header {
-  background-color: rgb(176, 176, 190);
-  text-align: center;
-  color: rgb(2, 24, 43);
-  padding: 20px;
 }
 
 .form__button {
@@ -155,6 +121,7 @@ textarea {
   margin-right: 40px;
   margin-top: 10px;
   color: aliceblue;
+  border: 0;
 }
 
 .hobbies {
@@ -170,8 +137,8 @@ h2 {
   margin-top: 20px;
   text-align: right;
   background-color: #EFF0F2;
-  width: 650px;
-  height: 80px;
+  width: 670px;
+  height: 60px;
   border-radius: 0 0 10px 10px;
   border-top: #bebcbc solid 2px;
 }
@@ -180,9 +147,6 @@ label {
   color: black;
 }
 
-.employed {
-  width: 290px;
-  height: 25px;
-  border-radius: 5px;
-  border: #bebcbc solid 2px;
+.input {
+  padding: 0 10px;
 }

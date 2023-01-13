@@ -10,103 +10,98 @@
 </head>
 <body>
          
-  <div class="form">
+  <form class="form">
 
     <div class="form__title">
       <h1>Create Account</h1>
     </div>
+                
+      <div class="container">
+        <div class="container-box">
+          <div class="box">
+            <label class="box__label"><h2>First name*</h2></label>
+            <input class="box__input" placeholder="enter your first name">
+         </div>
 
-
-        <div class="form__group">
-      <div class="container__first-last">
-        <div class="input-first">
-          <label class="form__label"><h2>First name*</h2></label>
-          <input class="form__input" value=" enter your first name">
-        </div>
-
-        <div class="input-last">
-          <label class="form__label"><h2>Last name</h2></label>
-          <input class="form__input" value=" enter your last name">
-        </div>
-      </div>
-
-      <div class="input-email">
-        <label class="form__email"><h2>Email*</h2></label>
-        <input class="email"  value=" enter your email">
-      </div>
-
-
-      <div class="container__password">
-        <div class="input-password">
-          <label class="form__label"><h2>Password*</h2></label>
-          <input class="form__input" value=" enter your password">
-        </div>
-
-        <div class="input-confirm">
-          <label class="form__label"><h2>Confirm Password*</h2></label>
-          <input class="form__input" value=" enter your password again">
+        <div class="box">
+          <label class="box__label"><h2>Last name</h2></label>
+          <input class="box__input" placeholder="enter your last name">
         </div>
       </div>
 
-      <div class="container__gender-hobbies">
-        <div class="gender">
+        <div class="box-long">
+          <label class="box__email"><h2>Email*</h2></label>
+          <input class="email__input"  placeholder="enter your email">
+        </div>
+         
+      <div class="container-box"> 
+        <div class="box">
+          <label class="box__label"><h2>Password*</h2></label>
+          <input class="box__input" type="password" placeholder="enter your password">
+        </div>
+
+        <div class="box">
+          <label class="box__label"><h2>Confirm Password*</h2></label>
+          <input class="box__input" type="password" placeholder="enter your password again">
+        </div>
+      </div>      
+        
+      <div class="container-box"> 
+        <div class="box">
           <h2>Gender*</h2>
           <input type="radio" name="Gender"><label>Male</label>
           <input type="radio" name="Gender"><label>Female</label>
         </div>
-
-
-        <div class="hobbies">
+        
+        <div class="box">
           <h2>Hobbies</h2>
           <input type="checkbox" name="Hobbies"><label>Music</label>
           <input type="checkbox" name="Hobbies"><label>Sports</label>
           <input type="checkbox" name="Hobbies"><label>Travel</label>
           <input type="checkbox" name="Hobbies"><label>Movies</label>
         </div>
-      </div>
-
+      </div> 
         
-        <div class="container__income">
-          <div class="source">
-            <h2 class="income-source">Source of Income</h2>
-            <input class="employed" type ="text" id="language" value="Employed" name="language" list="languages">
-            <datalist id="languages">
-              <option value="Employed">Employed</option>
-              <option value="Employed1"></option>
-            </datalist>
-          </div>
-          <div class="income">
-            <h2 class="income-source">Income</h2>
-            <form 
-            oninput="result.value=range.value">
-            <input type="range" id="range" min="0" max="450" step="10" value="50" class="range"></input>
+      <div class="container-box">
+        <div class="box">
+          <h2 class="income-source">Source of Income</h2>
+          <input class="employed" type ="text" id="language" placeholder="Employed" name="language" list="languages">
+          <datalist id="languages">
+            <option value="Employed">Employed</option>
+          </datalist>
+        </div>
+
+        <div class="box">
+          <h2 class="income-source">Income</h2>
+          <div class="container-range">
+            <input type="range" id="range" min="0" max="450" step="10" value="20" class="range" oninput="this.nextElementSibling.value=this.value +'К'">
             <output class="result" name="result" for="">20K</output>
-            
           </div>
         </div>
-
-         <div class="container__file-age">
-            <div class="file">
-              <label><h2>Upload Profile Picture</h2></label>
-              <input type="file" name="file-age" value="">
-            </div>
-  
-          <div class="age">
-            <h2>Age</h2>
-            <input type="text" class="input-age" name="Age" value =" 18">
-          </div>
+      </div>
+      
+      <div class="container-box">
+        <div class="box">
+          <label><h2>Upload Profile Picture</h2></label>
+          <input type="file" name="file-age" value="">
         </div>
-
-          <div class="bio">
-            <h2>Bio</h2>
-            <textarea cols="100" rows="70" maxlength="500"></textarea>
-          </div>
+      
+        <div class="box">
+          <h2>Age</h2>
+          <input type="text" class="input-age" name="Age" placeholder ="18">
         </div>
-        
-          <div class="footer">
-            <button type="reset" class="form__button">Create</button>
-          </div>
-  </div>
+      </div> 
+      
+        <div class="box-long">
+          <h2 class="bio-name">Bio</h2>
+          <textarea cols="100" rows="70" maxlength="500"></textarea>
+        </div>
+      </div>
+                    
+        <div class="footer">
+          <button type="reset" class="form__button">Create</button>
+        </div>
+  </form>
 
 </body>
 </html>

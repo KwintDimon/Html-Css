@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.box{
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.angry-circle{
+  position: relative;
+  width: 180px;
+  height: 90px;
+  background-color:yellow;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  animation: rotation-angry 1s infinite linear;
+}
+
+.half-circle{
+  position: relative;
+  height: 90px;
+  width: 180px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background-color:yellow;
+  animation: rotation-half 1s infinite linear;
+}
+
+.circle{
+  display: flex;
+  justify-content: space-around;
+  
+.white-circle{
+  position: relative;  
+  height: 20px;
+  width: 20px;
+  background-color:white;
+  border-radius: 50%;
+  animation-name: white-circle;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+}
+
+@keyframes white-circle{
+  10%{
+    left: -90px;
+  }
+  100%{
+    left: 500px;
+  }
+
+}
+
+@keyframes rotation-half{
+  10%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform:  rotate (0deg) ;
+  }
+
+}
+
+@keyframes rotation-angry{
+  10%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform:  rotate (0deg) ;
+  }
+
+}
+  

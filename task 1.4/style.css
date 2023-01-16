@@ -28,8 +28,8 @@ body {
   background-color: yellow;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
-  -webkit-animation: rotation-angry 1s infinite linear;
-          animation: rotation-angry 1s infinite linear;
+  -webkit-animation: rotation-angry 500ms infinite linear;
+          animation: rotation-angry 500ms infinite linear;
 }
 
 .half-circle {
@@ -39,16 +39,18 @@ body {
   border-bottom-left-radius: 90px;
   border-bottom-right-radius: 90px;
   background-color: yellow;
-  -webkit-animation: rotation-half 1s infinite linear;
-          animation: rotation-half 1s infinite linear;
+  -webkit-animation: rotation-half 500ms infinite linear;
+          animation: rotation-half 500ms infinite linear;
 }
 
 .circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
 }
 .circle .white-circle {
   position: relative;
@@ -69,19 +71,19 @@ body {
 
 @-webkit-keyframes white-circle {
   10% {
-    left: -90px;
+    left: -80px;
   }
   100% {
-    left: 500px;
+    left: 100px;
   }
 }
 
 @keyframes white-circle {
   10% {
-    left: -90px;
+    left: -80px;
   }
   100% {
-    left: 500px;
+    left: 100px;
   }
 }
 @-webkit-keyframes rotation-half {

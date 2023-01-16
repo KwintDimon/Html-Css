@@ -22,7 +22,7 @@ body {
   background-color:yellow;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
-  animation: rotation-angry 1s infinite linear;
+  animation: rotation-angry 500ms infinite linear;
 }
 
 .half-circle{
@@ -32,12 +32,13 @@ body {
   border-bottom-left-radius: 90px;
   border-bottom-right-radius: 90px;
   background-color:yellow;
-  animation: rotation-half 1s infinite linear;
+  animation: rotation-half 500ms infinite linear;
 }
 
 .circle{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 80px;
   
 .white-circle{
   position: relative;  
@@ -56,10 +57,10 @@ body {
 
 @keyframes white-circle{
   10%{
-    left: -90px;
+    left: -80px;
   }
   100%{
-    left: 500px;
+    left: 100px;
   }
 
 }

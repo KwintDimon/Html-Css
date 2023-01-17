@@ -5,10 +5,6 @@
 
 body {
   background-color: black;
-}
-
-.box {
-  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,28 +17,6 @@ body {
   min-height: 100vh;
 }
 
-.angry-circle {
-  position: relative;
-  width: 180px;
-  height: 90px;
-  background-color: yellow;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  -webkit-animation: rotation-angry 500ms infinite linear;
-          animation: rotation-angry 500ms infinite linear;
-}
-
-.half-circle {
-  position: relative;
-  height: 90px;
-  width: 180px;
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 90px;
-  background-color: yellow;
-  -webkit-animation: rotation-half 500ms infinite linear;
-          animation: rotation-half 500ms infinite linear;
-}
-
 .circle {
   display: -ms-grid;
   display: grid;
@@ -51,78 +25,123 @@ body {
   -webkit-column-gap: 80px;
      -moz-column-gap: 80px;
           column-gap: 80px;
+  z-index: 0;
 }
-.circle .white-circle {
+.circle .circle__food {
   position: relative;
   height: 20px;
   width: 20px;
   background-color: white;
   border-radius: 50%;
-  -webkit-animation-name: white-circle;
-          animation-name: white-circle;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  right: -50px;
+  -webkit-animation-name: circle__food;
+          animation-name: circle__food;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  animation-direction: reverse;
 }
 
-@-webkit-keyframes white-circle {
+@-webkit-keyframes circle__food {
   10% {
-    left: -80px;
+    opacity: 1;
   }
   100% {
-    left: 100px;
+    -webkit-transform: translate(-120px, -50%);
+            transform: translate(-120px, -50%);
   }
 }
 
-@keyframes white-circle {
+@keyframes circle__food {
   10% {
-    left: -80px;
+    opacity: 1;
   }
   100% {
-    left: 100px;
+    -webkit-transform: translate(-120px, -50%);
+            transform: translate(-120px, -50%);
   }
 }
-@-webkit-keyframes rotation-half {
-  10% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+.pacman {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  z-index: 1;
+}
+.pacman:before, .pacman:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 80px solid yellow;
+  border-radius: 50%;
+  border-right: 80px solid transparent;
+  -webkit-animation: animate1 linear 0.5s infinite;
+          animation: animate1 linear 0.5s infinite;
+}
+.pacman:after {
+  -webkit-animation: animate2 linear 0.5s infinite;
+          animation: animate2 linear 0.5s infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
-    -webkit-transform: rotate 0deg;
-            transform: rotate 0deg;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
 }
-@keyframes rotation-half {
-  10% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
-    -webkit-transform: rotate 0deg;
-            transform: rotate 0deg;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
 }
-@-webkit-keyframes rotation-angry {
-  10% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate 0deg;
-            transform: rotate 0deg;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
-@keyframes rotation-angry {
-  10% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+@keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate 0deg;
-            transform: rotate 0deg;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }

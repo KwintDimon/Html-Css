@@ -5,83 +5,76 @@
 
 body {
   background-color: black;
-}
-
-.box{
-  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 
-.angry-circle{
-  position: relative;
-  width: 180px;
-  height: 90px;
-  background-color:yellow;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  animation: rotation-angry 500ms infinite linear;
-}
-
-.half-circle{
-  position: relative;
-  height: 90px;
-  width: 180px;
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 90px;
-  background-color:yellow;
-  animation: rotation-half 500ms infinite linear;
-}
-
 .circle{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 80px;
+  z-index:0 ;
   
-.white-circle{
+.circle__food{
   position: relative;  
   height: 20px;
   width: 20px;
   background-color:white;
   border-radius: 50%;
-  animation-name: white-circle;
-  animation-duration: 1s;
+  right: -50px;
+  animation-name: circle__food;
+  animation-duration: .5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  
 }
 
 }
 
-@keyframes white-circle{
+@keyframes circle__food{
   10%{
-    left: -80px;
+    opacity: 1;
   }
   100%{
-    left: 100px;
+    transform: translate(-120px,-50%);
   }
-
-}
-
-@keyframes rotation-half{
-  10%{
-    transform: rotate(30deg);
-  }
-  100%{
-    transform:  rotate (0deg) ;
-  }
-
-}
-
-@keyframes rotation-angry{
-  10%{
-    transform: rotate(-30deg);
-  }
-  100%{
-    transform:  rotate (0deg) ;
-  }
-
 }
   
+.pacman{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 80px solid yellow;
+    border-radius: 50%;
+    border-right: 80px solid transparent;
+    animation:animate1 linear .5s infinite;
+  }
+  &:after {
+    animation:animate2 linear .5s infinite;
+  }
+}
+
+@keyframes animate1 {
+  0%{transform: rotate(270deg);}
+  50%{transform: rotate(360deg);}
+  100%{transform: rotate(270deg);}
+}
+
+@keyframes animate2 {
+  0%{transform: rotate(90deg);}
+  50%{transform: rotate(0deg);}
+  100%{transform: rotate(90deg);}
+}

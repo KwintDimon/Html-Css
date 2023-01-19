@@ -30,6 +30,8 @@ body {
   border-top-right-radius: 90px;
   -webkit-animation: half__top 500ms infinite linear;
           animation: half__top 500ms infinite linear;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 .half__bottom {
@@ -41,17 +43,18 @@ body {
   background-color: yellow;
   -webkit-animation: half__bottom 500ms infinite linear;
           animation: half__bottom 500ms infinite linear;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .circle {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr 80px 1fr;
+  -ms-grid-columns: 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 80px;
-     -moz-column-gap: 80px;
-          column-gap: 80px;
-  z-index: 0;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
 }
 .circle .circle__food {
   position: relative;
@@ -89,12 +92,12 @@ body {
 }
 @-webkit-keyframes half__top {
   10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
   }
   50% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -103,12 +106,12 @@ body {
 }
 @keyframes half__top {
   10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
   }
   50% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -117,12 +120,12 @@ body {
 }
 @-webkit-keyframes half__bottom {
   10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
   }
   50% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   100% {
     -webkit-transform: rotate 0deg;
@@ -131,12 +134,12 @@ body {
 }
 @keyframes half__bottom {
   10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
   }
   50% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   100% {
     -webkit-transform: rotate 0deg;

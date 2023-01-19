@@ -23,6 +23,7 @@ body {
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   animation: half__top 500ms infinite linear;
+  transform-origin:bottom center;
 }
 
 .half__bottom{
@@ -33,14 +34,15 @@ body {
   border-bottom-right-radius: 90px;
   background-color:yellow;
   animation: half__bottom 500ms infinite linear;
+  transform-origin:top center ;
 }
 
 
 .circle{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 80px;
-  z-index:0 ;
+  column-gap: 120px;
+   
   
 .circle__food{
   position: relative;  
@@ -48,12 +50,12 @@ body {
   width: 20px;
   background-color:white;
   border-radius: 50%;
-  
   animation-name: circle__food;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction:reverse;
+    
 }
 
 }
@@ -69,10 +71,10 @@ body {
   
 @keyframes half__top{
 10%{
-  transform:rotate(0deg);
+  transform:rotate(-60deg);
 }
 50%{
-  transform: rotate(-30deg);
+  transform: rotate(-40deg);
 }
 100%{
   transform: rotate(0deg);
@@ -81,9 +83,9 @@ body {
 
 @keyframes half__bottom{
   10%{
-    transform:rotate(0deg);
+    transform:rotate(60deg);
   }
-  50%{transform: rotate(30deg);}
+  50%{transform: rotate(40deg);}
   100%{
     transform:  rotate (0deg) ;
 

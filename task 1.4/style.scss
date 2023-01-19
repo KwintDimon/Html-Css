@@ -11,6 +11,31 @@ body {
   min-height: 100vh;
 }
 
+.half{
+  z-index: 1;
+ }
+
+.half__top{
+  position: relative;
+  width: 180px;
+  height: 90px;
+  background-color:yellow;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  animation: half__top 500ms infinite linear;
+}
+
+.half__bottom{
+  position: relative;
+  height: 90px;
+  width: 180px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background-color:yellow;
+  animation: half__bottom 500ms infinite linear;
+}
+
+
 .circle{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -23,58 +48,48 @@ body {
   width: 20px;
   background-color:white;
   border-radius: 50%;
-  right: -50px;
+  
   animation-name: circle__food;
   animation-duration: .5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  
+  animation-direction:reverse;
 }
 
 }
 
 @keyframes circle__food{
   10%{
-    opacity: 1;
+    left: -80px;
   }
   100%{
-    transform: translate(-120px,-50%);
+    left: 200px;
   }
 }
   
-.pacman{
-  position: relative;
-  width: 160px;
-  height: 160px;
-  z-index: 1;
+@keyframes half__top{
+10%{
+  transform:rotate(0deg);
+}
+50%{
+  transform: rotate(-30deg);
+}
+100%{
+  transform: rotate(0deg);
+}
+}
 
-  &:before,
-  &:after {
-    content:'';
-    display: block;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 80px solid yellow;
-    border-radius: 50%;
-    border-right: 80px solid transparent;
-    animation:animate1 linear .5s infinite;
+@keyframes half__bottom{
+  10%{
+    transform:rotate(0deg);
   }
-  &:after {
-    animation:animate2 linear .5s infinite;
+  50%{transform: rotate(30deg);}
+  100%{
+    transform:  rotate (0deg) ;
+
+
+}
+  
   }
-}
 
-@keyframes animate1 {
-  0%{transform: rotate(270deg);}
-  50%{transform: rotate(360deg);}
-  100%{transform: rotate(270deg);}
-}
 
-@keyframes animate2 {
-  0%{transform: rotate(90deg);}
-  50%{transform: rotate(0deg);}
-  100%{transform: rotate(90deg);}
-}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parallax__seasons_1 {
+  background: url(./img/winter.jpg);
+  padding: 20vh 0 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.parallax__seasons_1 h2 {
+  color: rgb(14, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 45px;
+}
+
+.content_1 {
+  text-align: center;
+  padding: 180px;
+}
+
+.content_2 h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 45px;
+  text-align: center;
+  padding: 180px;
+}
+
+.parallax__seasons_to {
+  background: url(./img/to.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax__seasons_2 {
+  background: url(./img/sping.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 60px;
+}
+
+.parallax__seasons_to {
+  background: url(./img/to.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax__seasons_3 {
+  background: url(./img/summer.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 60px;
+}
+
+.parallax__seasons_to {
+  background: url(./img/to.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax__seasons_4 {
+  background: url(./img/autumn.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 60px;
+}

@@ -32,7 +32,6 @@ body {
   transform-style: preserve-3d;
   background-size:border-box;
   box-sizing: border-box;
-  
 }
 
 .slide::before {
@@ -48,7 +47,6 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     transform: translateZ(-1px) scale(2);
-
 }
 
 
@@ -60,7 +58,7 @@ h1 {
   color: rgb(4, 4, 4);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   letter-spacing: 3px;
-  padding: 0 600px;
+  padding: 0 550px;
   transform: translateZ(-1)scale(2);
 }
 
@@ -71,36 +69,30 @@ h1 {
   font-size: 500%;
   color: rgb(249, 248, 248);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  padding: 0 600px;
-  
- }
+  padding: 0 550px;
+}
 
  .slide, .slide::before{
   content:"";
   background: 50% 50% / cover;
- }
+}
 
  #intro {
     background-image:url(./img/winter.jpg);
     z-index: 2;
- }
+}
 
  #slide1::before{
-  
-  background-image:url(./img/sping.jpg);
- 
+   background-image:url(./img/sping.jpg);
  }
  
  #slide2{
   background-image:url(./img/summer.jpg);
   z-index: 2;
-  
- }
+}
 
  #slide3::before{
-  
   background-image:url(./img/autumn.jpg);
-  
- }
+}
  
 

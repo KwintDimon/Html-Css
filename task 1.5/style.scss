@@ -1,57 +1,53 @@
-html {
-  height: 100%;
-  overflow: hidden;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  box-sizing:border-box
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-.slide {
-  width: 100%;
-  min-height: 100%;
-  transform-style: preserve-3d;
-  text-align: center;
-  position: relative;
+div{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 2em;
+  color:#fff;
+  text-shadow: 2px 2px 2px #000;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1 {
-  position: absolute;
+ h1 {
   font-size: 500%;
   color: rgb(4, 4, 4);
-  transform: translateZ(-1px) scale(2);
-  width: 100%;
-  height: 100%;
-  padding-left: 800px;
-}
-
-.slide {
- background:center/ cover;
- 
 }
 
 .winter {
   background-image:url(./img/winter.jpg);
+  width:100%;
+  height:100vh;
 }
 
 .spring {
   background-image:url(./img/sping.jpg);
- }
+  width:100%;
+  height:100em;
+}
  
 .summer {
   background-image:url(./img/summer.jpg);
+  width:100%;
+  height:100em;
 }
 
 .autumn {
   background-image:url(./img/autumn.jpg);
+  width:100%;
+  height:100vh;
 }
 
 

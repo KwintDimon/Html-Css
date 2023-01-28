@@ -15,30 +15,21 @@ body{
   overflow-x: hidden;
 }
 
-.wrapper_outer{
-  height: 100vh;
-  overflow: hidden;
+.wrapper{
+  position: relative;
   box-sizing:border-box;
+  height: 100vh;
+  text-align: center;
   transform-style: inherit;
   width: 100vw;
-}
-
-.wrapper{
-  height: 100%;
-  overflow-x: hidden;
-  perspective: 1px;
-  transform-style: preserve-3d;
+  
 }
 
 .parallax_section{
-  min-height: 100vh;
+  height: 100vh;
   padding: 50px;
-  display: flex;
-  align-items:center;
-  justify-content: center;
   width: 100vw;
   position: relative;
-  overflow: hidden;
   transform-style: preserve-3d;
 }
 

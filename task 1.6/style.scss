@@ -1,0 +1,50 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+span{
+  color: black;
+  font-weight: bold;
+}
+
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+.main-content{
+  width: 100%;
+  background-color:antiquewhite;
+}
+
+.sidebar{
+  width: 30%;
+  height: 100vh;
+  border-right: 2px solid black;
+  background-color:antiquewhite
+}
+
+ul{
+  background-color: blanchedalmond;
+  list-style: none;
+  padding: 0px;
+}
+
+li{
+  background-color: blanchedalmond;
+  font-size: 20px;
+  padding: 10px;
+  list-style: none;
+  border-top: 1px solid gray;
+  border-bottom:1px solid gray ;
+}
+
+.last-li{
+  border-bottom:0px solid gray ; 
+}
+
+a{
+  text-decoration: none;
+}
+

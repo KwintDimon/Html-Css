@@ -10,17 +10,67 @@
      
     <div class="sidebar">
       <ul>
-       <li class="first-li"><a href="#"><span>CSS Documentation</span></a></li> 
-       <li><a href="#">Introduction</a></li>
-       <li><a href="#">Prerequisites</a></li>
-       <li><a href="#">Modules</a></li>
-       <li><a href="#">Solving common CSS problems</a></li>
-       <li><a href="#">Working with CSS</a></li>
-       <li><a href="#">Adding CSS</a></li>
-       <li class="last-li"><a href="#">See also</a></li>
+       <li class="first-li"><span>CSS Documentation</span></li> 
+       <li><a href="#Introduction">Introduction</a></li>
+       <li><a href="#Prerequisites">Prerequisites</a></li>
+       <li><a href="#Modules">Modules</a></li>
+       <li><a href="#Solving">Solving common CSS problems</a></li>
+       <li><a href="#Working">Working with CSS</a></li>
+       <li><a href="#Adding CSS">Adding CSS</a></li>
+       <li class="last-li"><a href="#See also">See also</a></li>
       </ul>
     </div>
-    <div class="main-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus similique sapiente quisquam! Magnam architecto itaque ex animi quidem nulla unde quis obcaecati, temporibus placeat numquam eos quam dicta fugit vel.</div>
+
+    <div class="main-content">
+      <div class="content__css">
+        <h2 id="Introduction"><span>Introduction</span></h2>
+        <p>
+          
+          
+          Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.
+          
+          While html uses tags, css uses rulesets. CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document.</p>
+
+          <h2 id="Prerequisites"><span>Prerequisites</span></h2>  
+          <p>This is part 1 of Tailwind CSS Basics series.
+
+            View other episodes →
+            Zero to Tailwind CSS
+            
+            In this article, we will go through the minimum CSS knowledge you need to know before starting with Tailwind CSS. I assume that you already know the basics of HTML. But if you don’t, I have written a blog series covering that here.</p>
+
+          <h2 id="Modules"><span>Modules</span></h2>
+          <p>CSS Modules takes a different approach. Instead of writing plain HTML, we need to write all of our markup in a JavaScript file, like index.js.
+            During our build step, the compiler would search through that styles.css file that we’ve imported, then look through the JavaScript we’ve written and make the .title class accessible via styles.title. Our build step would then process both these things into new, separate HTML and CSS files, with a new string of characters replacing both the HTML class and the CSS selector class.
+          </p>
+          <h3><span>When to use CSS Modules</span></h3>
+          <p>CSS Modules are highly recommended for those new to building with Gatsby (and React in general) as they allow you to write regular, portable CSS files while gaining performance benefits like only bundling referenced code</p>
+          <h3><span>CSS styling text</span></h3>
+          <p>With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.</p>
+          <h3><span>CSS layout</span></h3>
+          <p>At this point, we've looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to correctly arrange your boxes in relation to the viewport as well as to one another. We've covered the necessary prerequisites, so let's dive deep into CSS layout, looking at such various features as: different display settings, positioning, modern layout tools like flexbox and CSS grid, and some of the legacy techniques you might still want to know about.</p>
+
+          <h2 id="Solving"><span>Solving common CSS problems</span></h2>
+          <p>At this point, we've looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to correctly arrange your boxes in relation to the viewport as well as to one another. We've covered the necessary prerequisites, so let's dive deep into CSS layout, looking at such various features as: different display settings, positioning, modern layout tools like flexbox and CSS grid, and some of the legacy techniques you might still want to know about.</p>  
+
+          <h2 id="Working"><span>Working with CSS</span></h2>
+          <p>CSS, or “Cascading Style Sheets,” is used for styling and laying out webpages. It can be used to adjust content size, spacing, color and font or add decorative features, such as animations or split content into columns.</p>
+
+          <h2 id="Adding CSS"><span>Adding CSS</span></h2>
+          <p>To link your CSS to your HTML, you have to use the link tag with some relevant attributes.
+
+            The link tag is a self-closing tag you should put at the head section of your HTML.
+            
+            To link CSS to HTML with it, this is how you do it:
+            
+            <div class="link">link rel="stylesheet" type="text/css" href="styles.css"</div>  
+            Place the link tag at the head section of your HTML as shown below:</p>
+
+          <h2 id="See also"><span>See also</span></h2> 
+          <p>You'll also see CSS values referred to as data types. The terms are basically interchangeable — when you see something in CSS referred to as a data type, it is really just a fancy way of saying value.</p>
+
+        </div>
+    </div>
   </div>
      
 </body>

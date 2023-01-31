@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.first-li {
+  border-top: 0px solid gray;
+}
+
 span {
   color: black;
   font-weight: bold;
@@ -31,6 +35,7 @@ ul {
   background-color: blanchedalmond;
   list-style: none;
   padding: 0px;
+  margin-top: 0px;
 }
 
 li {

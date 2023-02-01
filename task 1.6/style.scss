@@ -15,7 +15,7 @@ span{
 
 .wrapper{
   display: flex;
-  height: 100vw;
+  height: 100%;
 }
 
 .main-content{
@@ -25,7 +25,6 @@ span{
 
 .sidebar{
   width: 25%;
-  height: 100vh;
   border-right: 2px solid black;
   background-color:rgb(232, 228, 228)
 }
@@ -52,6 +51,8 @@ li{
 
 a{
   text-decoration: none;
+  color:inherit;
+  cursor:wait;
 }
 
 .main-content{
@@ -60,8 +61,29 @@ a{
 }
 
 .link{
-  background-color:rgb(183, 185, 187);
+  background-color:rgb(232, 228, 228);
   padding: 10px 10px;
+}
+
+.link::before{
+  content:"<"
+}
+
+.link::after{
+  content:">"
+}
+
+.head{
+  background-color:rgb(232, 228, 228);
+  font-weight: normal;
+}
+
+.head::before{
+  content:"<"
+}
+
+.head::after{
+  content:">"
 }
 
 h3{
@@ -70,11 +92,8 @@ h3{
   font-size: 16px;
 }
 
-a:hover{
-  background-image: url(../img/free-icon-cleaning-8530818.png);
-  height: 20px;
-  width: 20px;
-  color:black;
-  cursor: pointer;
+.css{
+  background-color:rgb(232, 228, 228);
+  font-weight: normal;
 }
 

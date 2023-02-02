@@ -36,28 +36,24 @@ body {
   animation: half__bottom 500ms infinite linear;
   transform-origin:top center ;
 }
-
-
-.circle{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 120px;
-   
   
 .circle__food{
+  display: flex;
   position: relative;  
-  height: 20px;
-  width: 20px;
-  background-color:white;
-  border-radius: 50%;
   animation-name: circle__food;
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction:reverse;
-    
+  width: 100%;
 }
 
+.circle__food:before{
+  content:'';
+  height: 20px;
+  width: 20px;
+  background-color:white;
+  border-radius: 50%;
 }
 
 @keyframes circle__food{
@@ -88,8 +84,6 @@ body {
   50%{transform: rotate(40deg);}
   100%{
     transform:  rotate (0deg) ;
-
-
 }
   
   }

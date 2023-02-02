@@ -47,21 +47,11 @@ body {
           transform-origin: top center;
 }
 
-.circle {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr 120px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
-}
-.circle .circle__food {
+.circle__food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border-radius: 50%;
   -webkit-animation-name: circle__food;
           animation-name: circle__food;
   -webkit-animation-duration: 0.5s;
@@ -71,6 +61,15 @@ body {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-direction: reverse;
+  width: 100%;
+}
+
+.circle__food:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 @-webkit-keyframes circle__food {

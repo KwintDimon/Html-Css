@@ -1,0 +1,103 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: 'Objective';
+  src: url('./Obective/Objective_Woff2/Objective-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Objective';
+  src: url('./Obective/Objective_Woff2/Objective-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Objective';
+  src: url('./Obective/Objective_Woff2/Objective-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Objective';
+  src: url('../fonts/Objective-Regular.eot');
+  src: local('☺'), url('../fonts/Objective-Regular.woff') format('woff'), url('../fonts/Objective-Regular.ttf') format('truetype'), url('../fonts/Objective-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container{
+  max-width: 1010px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+.header{
+  background: linear-gradient(1.02deg, #E5E5E5 -17.33%, rgba(74, 153, 211, 0) 75.91%), #ebf2f4;
+  padding-top: 58px;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 69px;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 40px;
+  color: #4A99D3;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Nav*/
+
+.nav-list{
+  display: flex;
+  column-gap:53px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-right: 150px;
+}
+
+.nav-link{
+  color: #0F001A;
+}
+
+.nav-link.active{
+  color: #4A99D3;
+}
+
+/*Header content*/
+
+.header-row{
+  display: flex;justify-content: space-between;
+  column-gap:30px;
+}
+
+.header-content{
+  max-width:500px;
+  margin-top: 74px;
+}
+
+.header-heading{
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header-content p{
+  font-size: 20px;
+  color: #260041;
+  line-height: 36px;
+}
+

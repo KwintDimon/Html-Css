@@ -1,45 +1,125 @@
-@media (max-width: 1010px){
-  .nav-list{
-    display: none;
-    }
-    .nav-button{
-    display: block;
-    }
-
-    .nav.open .nav-list{
+@media (max-width: 1200px){
+    .nav-list{
     position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#E5F0F9, #FFFFFF);
-    justify-content: start;
+    justify-content: center;
     display: flex;
-    z-index: 1;
-    padding: 96px 50%;
-    flex-direction: column;
-    row-gap: 40px;
+    margin-left: 50%;
+    column-gap: 60px;
     font-size: 24px;
+    max-width: 800px;
     
     }
+   
 
-    .nav-button{
+    .logo{
       position: fixed;
-      z-index: 9;
-      top: 66px;
-      right: 30px;
+      font-size: 64px;
+      justify-content: center;
+      display: flex;
     }
-
+    
     .header-row{
-      flex-direction: column;
-      z-index: 9;
-      padding: 96px 25%;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 34px;
       position: fixed;
-      padding-top: 116px;
+      padding-top: 16px;
       padding-bottom: 10px;
     }
-
     
 }
+
+@media (max-width: 992px){
+    .header-row{
+    flex-direction: row;
+    min-width: 925px;
+    padding: 20% 1%;
+    max-width: 768px;
+    padding-top: 16px;
+    
+    margin: 0 auto;
+    
+    
+    }
+
+    .header-content p{
+     font-size: 50%;
+     
+      
+      
+    }
+
+    .header-heading{
+      
+      font-size: 70%;
+      
+      
+    }
+
+    .nav-list{
+      position: fixed;
+      justify-content: center;
+      display: flex;
+      margin-left: 50%;
+      column-gap: 40px;
+      font-size: 24px;
+      
+      
+      }
+  
+      .logo{
+        position: fixed;
+        font-size: 44px;
+        justify-content: center;
+        display: flex;
+      }
+  
+  }
+
+  @media (max-width: 930px){
+    .header-row{
+    flex-direction: column;
+    padding: 1% 5%;
+       
+    }
+
+    .header-content p{
+     font-size: 50%;
+     bottom:-35px;
+      
+    }
+
+    .header-heading{
+      font-size: 70%;
+          
+    }
+
+    .nav-list{
+      position: fixed;
+      justify-content: center;
+      display: flex;
+      margin-left: 30%;
+      column-gap: 40px;
+      font-size: 24px;
+    }
+  
+      .logo{
+        position: fixed;
+        font-size: 44px;
+        justify-content: center;
+        display: flex;
+      }
+  
+  }
+
+  @media (max-width: 576px){
+    .nav-list{
+      position: fixed;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      column-gap: 40px;
+      font-size: 24px;
+    }
+  }

@@ -1,125 +1,17 @@
-@media (max-width: 1200px){
-    .nav-list{
-    position: fixed;
-    justify-content: center;
+@media (min-width: 767px) {
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-left: 50%;
-    column-gap: 60px;
-    font-size: 24px;
-    max-width: 800px;
-    
-    }
-   
-
-    .logo{
-      position: fixed;
-      font-size: 64px;
-      justify-content: center;
-      display: flex;
-    }
-    
-    .header-row{
-      flex-direction: row;
-      justify-content: center;
-      font-size: 34px;
-      position: fixed;
-      padding-top: 16px;
-      padding-bottom: 10px;
-    }
-    
+  }
 }
-
-@media (max-width: 992px){
-    .header-row{
-    flex-direction: row;
-    min-width: 925px;
-    padding: 20% 1%;
-    max-width: 768px;
-    padding-top: 16px;
-    
-    margin: 0 auto;
-    
-    
-    }
-
-    .header-content p{
-     font-size: 50%;
-     
-      
-      
-    }
-
-    .header-heading{
-      
-      font-size: 70%;
-      
-      
-    }
-
-    .nav-list{
-      position: fixed;
-      justify-content: center;
-      display: flex;
-      margin-left: 50%;
-      column-gap: 40px;
-      font-size: 24px;
-      
-      
-      }
-  
-      .logo{
-        position: fixed;
-        font-size: 44px;
-        justify-content: center;
-        display: flex;
-      }
-  
+@media (min-width: 767px) {
+  .section__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-transform: translate(-75%, 0px);
+            transform: translate(-75%, 0px);
+    position: relative;
   }
-
-  @media (max-width: 930px){
-    .header-row{
-    flex-direction: column;
-    padding: 1% 5%;
-       
-    }
-
-    .header-content p{
-     font-size: 50%;
-     bottom:-35px;
-      
-    }
-
-    .header-heading{
-      font-size: 70%;
-          
-    }
-
-    .nav-list{
-      position: fixed;
-      justify-content: center;
-      display: flex;
-      margin-left: 30%;
-      column-gap: 40px;
-      font-size: 24px;
-    }
-  
-      .logo{
-        position: fixed;
-        font-size: 44px;
-        justify-content: center;
-        display: flex;
-      }
-  
-  }
-
-  @media (max-width: 576px){
-    .nav-list{
-      position: fixed;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      margin-left: 30%;
-      column-gap: 40px;
-      font-size: 24px;
-    }
-  }
+}

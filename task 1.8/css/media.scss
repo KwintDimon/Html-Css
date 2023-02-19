@@ -1,0 +1,18 @@
+//section-content//
+@media (min-width: 767px){
+  .section{
+    display: flex;
+  }
+}
+
+@media (min-width: 767px){
+  .section__img{
+    flex:0 0 50%;
+    transform: translate(-75%, 0px);
+    position: relative;
+  }
+  
+}
+
+
+

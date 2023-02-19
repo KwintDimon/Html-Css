@@ -2,41 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <link href="./css/style.css" rel="stylesheet" type="text/css"/>
-  <link href="./css/media.css" rel="stylesheet" type="text/css"/>
-  <title>Task 1.8 CSS</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <!--Header nav-->
-      <div class="header-nav">
-        <a href="#!" class="logo">LOGO</a>
-        
+  <div class="wrapper">
+    <div class="container"> 
+      <header class="header">
+        <div class="logo">
+          <a href="#!" class="logo">LOGO</a>
+        </div>
+          <!--Header nav-->
+        <div class="header__nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#!" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#!" class="nav-link">Contact Us</a></li>
+            <li class="nav__item"><a href="#!" class="nav__active">Home</a></li>
+            <li class="nav__item"><a href="#!" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#!" class="nav__link">Contact Us</a></li>
           </ul>
-        
       </div>
-
-      <!--Header content-->
-      <div class="header-row">
-        <div class="header-content">
-          <h1 class="header-heading">New E-commerce App best for You</h1>
-            <p class="flow-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Amet sed vulputate vitae velit dictum cursus amet. Turpis donec ut velit quis. Cursus commodo, eget urna, sapien amet. </p>
-            <div class="btn-content">
-              <a href="#!"><button class="btn_1"><img src="./img/asset 1 1.png" alt="Кнопка «button»"></button></a>
-              <a href="#!"><button class="btn_2"><img src="./img/asset 2 1.png" alt="Кнопка «button»"></button></a>
-            </div>
-           
-        </div>
-                <div class="header-img">
-          <img src="./img/Mockup.png" alt="">
-        </div>
-      </div>
+        </header>
     </div>
-  </header>  
+          <!--Header content-->
+      <section class="section">
+        <div class="section__content">
+          <div class="section__container">
+            <div class="section__body">
+              <h1 class="section__title">New E-commerce App best for You</h1>
+                <div class="section__text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Amet sed vulputate vitae velit dictum cursus amet. Turpis donec ut velit quis. Cursus commodo, eget urna, sapien amet. </div>
+              <div class="btn-content">
+                <a href="#!"><button class="btn-content__google"><img src="./img/asset 1 1.png" alt="Кнопка «button»"></button></a>
+                <a href="#!"><button class="btn-content__app"><img src="./img/asset 2 1.png" alt="Кнопка «button»"></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="section__img">
+        <img class="banner__img" src="./img/Mockup.png" alt="">
+      </div>  
+    </section>
+  </div>  
 </body>
 </html>

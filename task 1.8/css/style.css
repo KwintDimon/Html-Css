@@ -137,15 +137,15 @@ body {
   font-weight: 500;
   font-size: 50px;
   line-height: 70px;
-  letter-spacing: 0.02em;
   color: #260041;
+  letter-spacing: 2%;
   margin-top: 74px;
 }
 
 .section__text {
-  font-size: 20px;
   color: #260041;
   line-height: 36px;
+  font-size: 20px;
 }
 
 .btn-content__google {
@@ -171,4 +171,40 @@ body {
           column-gap: 20px;
   padding-top: 60px;
   max-width: 600px;
+}
+
+.services__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__receive {
+  width: 380px;
+  height: 525px;
+}
+
+.services__send {
+  width: 380px;
+  height: 537px;
+}
+
+.services__buy {
+  width: 380px;
+  height: 525px;
+}
+
+.services__text-3__receive {
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
+}
+
+.services__text-3__send {
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
+}
+
+.services__text-3__buy {
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
 }

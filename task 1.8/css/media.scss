@@ -1,11 +1,11 @@
 //section-content//
-@media (min-width: 767px){
+@media (min-width: 768px){
   .section{
     display: flex;
   }
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .section__img{
     flex:0 0 50%;
     transform: translate(-75%, 0px);
@@ -13,6 +13,26 @@
   }
   
 }
+
+@media screen and (max-width: 768px) {  
+  
+  section {  
+      flex-direction: column-reverse;
+      text-align: center;
+      flex: 1 1 auto;
+  }
+}
+
+@media  (max-width: 576px) {  
+  
+
+.nav-list{
+  flex-direction: column;
+  
+}
+
+}
+
 
 
 

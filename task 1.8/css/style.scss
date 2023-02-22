@@ -96,7 +96,7 @@ body{
 }
 
 .section__body{
-  
+ width: 50%; 
 }
 
 .section__content{
@@ -116,6 +116,7 @@ body{
   color: #260041;
   letter-spacing: 2%;
   margin-top: 74px;
+  
 }
 
 .section__text{
@@ -146,8 +147,18 @@ body{
   justify-content: center;
 }
 
-.services__container{
+.services{
   display: flex;
+  overflow: hidden;
+  padding-top: 163px;
+}
+
+.services__container{
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items:center;
+  max-width: 913px;
+  
 }
 /*What we do*/
 .receive{
@@ -184,6 +195,19 @@ body{
 
 .lorem__text{
   margin-bottom: 62px;
+}
+
+.content__receive{
+ 
+  
+}
+
+.content__columns{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 113px;
+  
 }
 
 .send{
@@ -313,6 +337,8 @@ body{
   line-height: 46px;
   letter-spacing: 0.05em;
    color: #260041;
+   display: flex;
+   justify-content: start;
 }
 
 

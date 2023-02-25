@@ -1,9 +1,7 @@
 //section-content//
-@media  screen and  (min-width: 1200px){
-  .section__body{
-   max-width:50%;
-               
-  }
+@media  screen and  (max-width: 1200px){
+  
+
  
   .btn-content{
    width: 90%;
@@ -13,6 +11,10 @@
     max-width: 100%;
   }
   
+}
+
+@media  screen and  (min-width: 1200px){
+
 }
 
 
@@ -47,9 +49,7 @@
 }
 
 @media  (max-width: 576px) {  
-  .container{
-    width: 40%;
-  }
+ 
   .section__body{
     max-width: 100%;
   }

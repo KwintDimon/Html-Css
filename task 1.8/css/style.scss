@@ -181,6 +181,13 @@ max-width: 50%;
     margin-top:870px;
   }
 
+  .group-four{
+    position: absolute;
+    z-index: 1;
+    transform: translate(1020px);
+    margin-top:1975px;
+  }
+
   .rant{
     position: absolute;
     z-index: 1;
@@ -302,7 +309,7 @@ max-width: 50%;
 
 //reviews//
 .reviews{
-  max-width: 1195px;
+  transform: translateX(-10px);
 }
 
 .reviews__title{
@@ -327,7 +334,6 @@ max-width: 50%;
   height: 400px;
   left: 0px;
   margin-top: 78px;
-  margin-left: -100px;
   background: rgba(74, 153, 211, 0.1);
   border-radius: 0px 6px 6px 0px;
 }
@@ -339,7 +345,7 @@ max-width: 50%;
 
 .reviews__descr{
   width: 418px;
-  margin-top: 110px;
+  margin-top: 205px;
 }
 
 .descr__img{
@@ -361,6 +367,7 @@ max-width: 50%;
   font-size: 18px;
   line-height: 19px;
   color: #0F001A;
+  margin-bottom: 20px;
 }
 
 .switch{
@@ -371,7 +378,6 @@ max-width: 50%;
 }
 
 .button__left{
-  
   width: 80px;
   height: 80px;
   background-color:#4A99D3;

@@ -202,6 +202,13 @@ body {
           transform: translate(872px);
   margin-top: 870px;
 }
+.cards .group-four {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(1020px);
+          transform: translate(1020px);
+  margin-top: 1975px;
+}
 .cards .rant {
   position: absolute;
   z-index: 1;
@@ -341,7 +348,8 @@ body {
 }
 
 .reviews {
-  max-width: 1195px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .reviews__title {
@@ -370,7 +378,6 @@ body {
   height: 400px;
   left: 0px;
   margin-top: 78px;
-  margin-left: -100px;
   background: rgba(74, 153, 211, 0.1);
   border-radius: 0px 6px 6px 0px;
 }
@@ -382,7 +389,7 @@ body {
 
 .reviews__descr {
   width: 418px;
-  margin-top: 110px;
+  margin-top: 205px;
 }
 
 .descr__img {
@@ -403,6 +410,7 @@ body {
   font-size: 18px;
   line-height: 19px;
   color: #0F001A;
+  margin-bottom: 20px;
 }
 
 .switch {

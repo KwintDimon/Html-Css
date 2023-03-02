@@ -321,23 +321,24 @@ max-width: 50%;
 
 .review{
   display: flex;
-  gap: 200px;
+  gap: 250px;
   align-items:center;
+  width: 100vw;
+  transition: all 0.6s linear;
 }
 
 .reviews__bacground{
   position: absolute;
-  width: 677px;
-  height: 400px;
+  width: 46vw;
+  height: 450px;
   left: 0px;
   margin-top: 78px;
   background: rgba(74, 153, 211, 0.1);
   border-radius: 0px 6px 6px 0px;
 }
 
-.review__img{
-  height: 100%;
-  width: 100%;
+.reviews__img{
+  margin-left: 10vw;
 }
 
 .reviews__descr{
@@ -347,7 +348,6 @@ max-width: 50%;
 
 .descr__img{
   padding-bottom: 40px;
- 
 }
 
 .descr__client{
@@ -369,7 +369,8 @@ max-width: 50%;
 
 .switch{
   display: flex;
-  transform: translate(40%);
+  margin-left: 20vw;
+  justify-content: center;
 }
 
 .button__left{
@@ -377,6 +378,10 @@ max-width: 50%;
   height: 80px;
   background-color:#4A99D3;
   border-radius: 4px;
+}
+
+.left{
+  margin-top: 20px;
 }
 
 .button__right{
@@ -387,15 +392,15 @@ max-width: 50%;
   border-radius: 4px;
 }
 
+.right{
+  margin-top: 20px;
+}
+
 //Carusel//
 .carusel{
   display: flex;
-  transform: translate(-10%,-5%);
-  width: 250%;
+  width: 300vw;
   overflow: hidden;
-  transform: 0.4s ease;
-  
-  
 }
 
 input[type="radio"]{
@@ -403,16 +408,16 @@ input[type="radio"]{
   visibility: hidden;
 }
 
-#one-review:checked ~ .review{
+#one-review:checked ~ .review-one{
   margin-left: 0;
 }
 
-#second-review:checked ~ .review{
-  margin-left: -50%;
+#second-review:checked ~ .review-one{
+  margin-left: -100vw;
 }
 
-#third-review:checked ~ .review{
-  margin-left: -100%;
+#third-review:checked ~ .review-one{
+  margin-left: -200vw;
 }
 
 
@@ -454,6 +459,14 @@ input[type="radio"]{
     max-width: 100%;
     margin-bottom: 0;
   }
+
+  .reviews__img{
+    margin-left: 0;
+  }
+
+  .reviews__descr{
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 768px){
@@ -487,6 +500,30 @@ input[type="radio"]{
   .content__title{
     max-height: 100%;
     margin-bottom: 20px;
+  }
+
+  .review{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .reviews__title{
+    margin-top: 10px;
+  }
+
+  .reviews__bacground{
+    width: 100vw;
+  }
+
+  .reviews__descr{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .switch{
+    display: flex;
+    justify-content: center;
   }
 }
 

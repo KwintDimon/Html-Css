@@ -591,6 +591,139 @@ input[type=radio] {
   font-size: 20px;
 }
 
+.footer {
+  background: #4A99D3;
+}
+
+.container__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 55px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 29px;
+  color: #fff;
+}
+
+.footer__logo {
+  width: 109px;
+  height: 35px;
+  margin-left: 124px;
+}
+.footer__logo .logo {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.footer__nav {
+  gap: 60px;
+}
+.footer__nav .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav__title {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.nav__link {
+  color: #fff;
+  margin-top: 34px;
+  font-size: 14px;
+}
+
+.nav__about {
+  color: #fff;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.nav__others {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  color: #fff;
+  width: 63px;
+}
+
+.inputs {
+  margin-right: 124px;
+}
+
+.nav__subscribe {
+  width: 394px;
+  height: 122px;
+  color: rgb(255, 255, 255);
+}
+
+.container__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  width: 394px;
+  height: 122px;
+  margin-top: -46px;
+  color: black;
+}
+
+.email {
+  width: 268px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.btn__subscribe {
+  width: 116px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+.btn__subscribe h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #4A99D3;
+}
+
+.footer__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 10.41px;
+  line-height: 11px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 100%;

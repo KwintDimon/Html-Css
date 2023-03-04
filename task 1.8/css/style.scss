@@ -419,6 +419,110 @@ input[type="radio"]{
 #third-review:checked ~ .review-one{
   margin-left: -200vw;
 }
+//download//
+
+.container__download{
+  display: flex;
+  flex-direction: row;
+  gap: 68px;
+  max-width: 100%;
+}
+
+.download__img{
+  margin-left: 10vw;
+  margin-top: 143px;
+}
+
+.phones{
+  max-width: 100%;
+  height: auto;
+}
+
+.download__stock{
+  width: 444px;
+  height: 229.58px;
+}
+
+.stock__title{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  color: #0F001A;
+  margin-top: 257px;
+}
+
+.stock__deskr{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0F001A;
+  opacity: 0.5;
+  margin-top: 16px;
+}
+
+.btn__stock{
+  justify-content:center;
+  display: flex;
+  gap:21px;
+  margin-top: 56px;
+ 
+}
+
+.btn__google{
+  width: 180px;
+  height: 60px;
+  background: #000000;
+  border-radius: 5px;
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  .google__item{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+  }
+  .google{
+  font-size: 18px;
+  margin-left: 10px;
+  }
+  .app{
+    font-size: 12px;
+    margin-right: 36px;
+  }
+  .triangle{
+    border-top: 12px solid transparent;
+	  border-left: 20px solid #fff;
+	  border-bottom: 15px solid transparent;
+    font-size: 1px;
+    margin-left: 20px;
+    border-radius:2px;
+  }
+}
+
+.btn__app{
+  width: 180px;
+  height: 60px;
+  background: #000000;
+  border-radius: 5px;
+}
+
+.apple{
+  margin-left: 20px;
+}
+
+.apple__desk{
+  font-size: 9px;
+  margin-right: 9px;
+}
+
+.apple__logo{
+  margin-left: 14px;
+  font-size: 20px;
+}
+
 
 
 
@@ -467,6 +571,7 @@ input[type="radio"]{
   .reviews__descr{
     margin-top: 0;
   }
+  
 }
 
 @media (min-width: 768px){
@@ -525,6 +630,16 @@ input[type="radio"]{
     display: flex;
     justify-content: center;
   }
+
+  .container__download{
+    flex-direction: column-reverse;
+    display:flex;
+    align-items:center;
+    gap:128px;
+  }
+  .download{
+    margin-top: -140px;
+  }
 }
 
 @media  (max-width: 576px){  
@@ -574,6 +689,16 @@ input[type="radio"]{
   .icons{
     flex-direction: column;
     gap: 10px;
+  }
+  .stock__deskr{
+    display: flex;
+    text-align: center;
+    max-width: 90%;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .btn__stock{
+    gap:1px;
   }
 }
 
